@@ -1,0 +1,31 @@
+<div class="container">
+<div class="jumbotron">
+  <form class="form-group" #frm="ngForm" (ngSubmit)="adduser(frm)">
+  <label for="name">Name: </label>
+    <input name="name" type="text" class="form-control" ngModel required #name="ngModel">
+    <div style="color:red"*ngIf="name.errors && name.touched">
+    <div class="container"><div class="row"><p>Name cant be empty bro!</p></div></div> 
+    </div>
+    <label for="city">City: </label>
+    <input name="city" type="text"class="form-control"ngModel required #city="ngModel">
+    <div style="color:red"*ngIf="city.errors && city.touched">
+    <div class="container"><div class="row"><p>Hey where is your city!!</p></div></div> 
+    </div>
+    <label for="contact">Contact: </label>
+    <input
+    name="contact"
+    type="text"
+    class="form-control"
+    ngModel
+    required
+    #contact="ngModel"
+    >
+    <div style="color:red"*ngIf="contact.errors && contact.touched">
+    <div class="container"><div class="row"><p>No contact details hah!</p></div></div> 
+    </div><br>
+    <button class="btn btn-success" type="submit">ADD</button>
+  </form>
+  <!--for getting form details
+  {{frm.value | json}}-->
+</div>
+</div>

@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\directive-eg",
+    "\\src\\app\\first",
+    "\\src\\app\\greet",
+    "\\src\\app\\home",
+    "\\src\\app\\houses",
+    "\\src\\app\\template-driven",
+    "\\src\\assets"
+  ],
+  "SelectedNode": "\\src\\app\\first\\first.component.html",
+  "PreviewInSolutionExplorer": false
+}

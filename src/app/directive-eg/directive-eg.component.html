@@ -1,0 +1,13 @@
+<div class="container">
+<div [ngClass]="stylestatus">
+<button (click)="hidekingdoms()" class="btn btn-danger">Hide</button>
+<button (click)="dynamiccss()" class="btn btn-primary">Change Bg</button>
+
+<div *ngIf="status">
+<div class=" " *ngFor="let houses of kingdoms; let i=index">
+{{i+1}}){{houses}}
+</div>
+</div>
+</div>
+</div>
+<app-template-driven></app-template-driven>
